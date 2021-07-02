@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">androidRoomdb</string>
+    <string name="add_user">Add USer</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last name</string>
+    <string name="save_user">save user</string>
 </resources>
