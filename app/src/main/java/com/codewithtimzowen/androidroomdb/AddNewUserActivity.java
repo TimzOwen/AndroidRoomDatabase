@@ -38,8 +38,6 @@ public class AddNewUserActivity extends AppCompatActivity {
         user.lastName = last_name;
 
         db.userDao().insertUser();
-
         finish();
-
     }
 }
