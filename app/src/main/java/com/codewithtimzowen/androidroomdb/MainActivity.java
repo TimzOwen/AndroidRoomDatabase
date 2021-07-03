@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
         AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
         List<User> userList = db.userDao().getAllUsers();
-        uSerListAdapter.setUserList(userList);
+        uSerListAdapter.setUserList(userList);  // userList not fetching
+        // TODO fix user list
     }
 
     @Override

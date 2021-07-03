@@ -10,16 +10,17 @@ import androidx.room.RoomDatabase;
 
 public abstract class AppDatabase  extends RoomDatabase {
 
-    public abstract  UserDao userDao();
+    public abstract UserDao userDao();
 
     private static AppDatabase INSTANCE;
 
-    public static AppDatabase getDbInstance(Context context){
+    public static AppDatabase getDbInstance(Context context) {
 
-        if (INSTANCE == null){
-            INSTANCE = Room.databaseBuilder(context.getApplicationContext(),AppDatabase.class,"DB_NAME")
+        if(INSTANCE == null) {
+            INSTANCE = Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "DB_NAME")
                     .allowMainThreadQueries()
                     .build();
+
         }
         return INSTANCE;
     }
